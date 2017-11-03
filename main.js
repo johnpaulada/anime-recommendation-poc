@@ -91,7 +91,7 @@ function initializeApp(data) {
 
         // Generate recommendations
         recommendations = recommendAnime([...RATINGS, currentRatings], ANIME_LIST)
-        alert("Recommendations generated!")
+        swal("Recommendations Generated!", "The following anime will be recommendations.", "success")
       }
 
       // Get top anime recommendation
