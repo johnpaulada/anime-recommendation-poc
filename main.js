@@ -1,7 +1,9 @@
 const recommendAnime = (RATINGS, ANIME_LIST) => {
-  const {factorizeMatrix, transpose, dot} = matrixFactorization
-  const [FACTOR1, FACTOR2] = factorizeMatrix(RATINGS)
-  const recommendations = dot(FACTOR1, transpose(FACTOR2))[RATINGS.length - 1]
+  const {factorizeMatrix, buildCompletedMatrix} = matrixFactorization
+  const USER_RATINGS_INDEX = RATINGS.length - 1
+  const FACTORS = factorizeMatrix(RATINGS)
+  const COMPLETED_MATRIX = buildCompletedMatrix(FACTORS)
+  const recommendations = COMPLETED_MATRIX[USER_RATINGS_INDEX]
 
   return recommendations
           .map((rating, i) => [i, rating])
