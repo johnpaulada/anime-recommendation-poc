@@ -1,6 +1,8 @@
 # Anime Recommendation Proof of Concept
 This is an anime recommendation site proof of concept that uses matrix factorization to recommend anime.
 
+[Practical AI - Building a Recommendation System slides](https://www.slideshare.net/crimsonemperor/practical-ai-building-a-recommendation-system)
+
 [![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/fo-real.svg)](http://forthebadge.com)
 
